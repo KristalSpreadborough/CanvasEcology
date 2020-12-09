@@ -1,0 +1,42 @@
+{
+ "name": "flare",
+ "children": [
+  {
+   "name": "Groups",
+   "children": [
+    {"name": "Melbourne Data Analytics Platform (MDAP)", "value": 2822},
+    {"name": "Social and Cultural Informatics Platform (SCIP)", "value": 2822}
+   ]
+  },
+  {
+   "name": "Platforms",
+   "children": [
+    {"name": "Figshare", "value": 2822},
+    {"name": "Omeka", "value": 2822}
+   ]
+  },
+  {
+   "name": "Research Areas",
+   "children": [
+    {"name": "Ecology of Resources", "value": 2822},
+    {"name": "Scholarship of teaching and learning", "value": 2822},
+    {"name": "Scholarship of technology enhanced learning", "value": 2822},
+    {"name": "Technology enhanced learning", "value": 2822},
+    {"name": "Post-digital", "value": 2822}
+   ]
+  },
+  {
+   "name": "Tech-ish terms",
+   "children": [
+    {"name": "Web scraping", "value": 2822},
+    {"name": "Application Programming Interface (API)", "value": 2822}
+   ]
+  },
+  {
+   "name": "Places",
+   "children": [
+    {"name": "Galleries, Libraries, Archives, and Museums (GLAM)", "value": 2822}
+   ]
+  }
+ ]
+}
