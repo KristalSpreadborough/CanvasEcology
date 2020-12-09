@@ -1,6 +1,6 @@
-# Zoomable Circle Packing
+# Force-Directed Graph
 
-https://observablehq.com/d/2d36e16ddd6a5eb9@165
+https://observablehq.com/d/ff5d5c0be8cb7e5d@149
 
 View this notebook in your browser by running a web server in this folder. For
 example:
@@ -14,14 +14,14 @@ import this module directly into your application. To npm install:
 
 ~~~sh
 npm install @observablehq/runtime@4
-npm install https://api.observablehq.com/d/2d36e16ddd6a5eb9.tgz?v=3
+npm install https://api.observablehq.com/d/ff5d5c0be8cb7e5d.tgz?v=3
 ~~~
 
 Then, import your notebook and the runtime as:
 
 ~~~js
 import {Runtime, Inspector} from "@observablehq/runtime";
-import define from "2d36e16ddd6a5eb9";
+import define from "ff5d5c0be8cb7e5d";
 ~~~
 
 To log the value of the cell named “foo”:
