@@ -72,24 +72,24 @@ FileAttachment("miserables.json").json()
 );
   main.variable(observer("drag")).define("drag", ["d3"], function(d3){return(
 simulation => {
-  
+
   function dragstarted(event) {
     if (!event.active) simulation.alphaTarget(0.3).restart();
     event.subject.fx = event.subject.x;
     event.subject.fy = event.subject.y;
   }
-  
+
   function dragged(event) {
     event.subject.fx = event.x;
     event.subject.fy = event.y;
   }
-  
+
   function dragended(event) {
     if (!event.active) simulation.alphaTarget(0);
     event.subject.fx = null;
     event.subject.fy = null;
   }
-  
+
   return d3.drag()
       .on("start", dragstarted)
       .on("drag", dragged)
@@ -99,5 +99,21 @@ simulation => {
   main.variable(observer("d3")).define("d3", ["require"], function(require){return(
 require("d3@6")
 )});
+textElements = textGroup.selectAll('text')
+  .data(nodes, function (node) { return node.id })
+
+textElements.exit().remove()
+
+var textEnter = textElements
+  .enter()
+  .append('text')
+  .text(function (node) { return node.label })
+  .attr('font-size', 15)
+  .attr('dx', 15)
+  .attr('dy',4)
+  .style('fill', 'black')
+
+textElements = textEnter.merge(textElements)
+}
   return main;
 }
