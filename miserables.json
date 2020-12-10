@@ -1,12 +1,12 @@
 {
   "nodes": [
-    {"id": "Canvas", "group": 1},
-    {"id": "Zoom", "group": 1}
-      ],
+    {"id": "Myriel", "group": 1},
+    {"id": "Napoleon", "group": 1},
+    {"id": "Mlle.Baptistine", "group": 1},
+  ],
 
-  "links": [
-    {"source": "Gauci", "target": "Canvas",  "value": 1},
-    {"source": "Gauci", "target": "Zoom",  "value": 1},
-    {"source": "Jabbar", "target": "Zoom",  "value": 1}
+    "links": [
+      {"source": "Napoleon", "target": "Myriel", "value": 1},
+      {"source": "Mlle.Baptistine", "target": "Myriel", "value": 8},
       ]
 }
