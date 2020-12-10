@@ -1,12 +1,29 @@
 {
   "nodes": [
-    {"id": "Myriel", "group": 1},
-    {"id": "Napoleon", "group": 1},
-    {"id": "Mlle.Baptistine", "group": 1},
-  ],
+    {"id": "test1", "group": 1},
+    {"id": "test2", "group": 2},
+    {"id": "test3", "group": 3},
+    {"id": "test4", "group": 4},
+    {"id": "test5", "group": 5},
+    {"id": "test6", "group": 6},
+    {"id": "test7", "group": 7},
+    {"id": "test8", "group": 8},
+    {"id": "test9", "group": 9},
+    {"id": "test10", "group": 10},
+    {"id": "test11", "group": 11}
 
-    "links": [
-      {"source": "Napoleon", "target": "Myriel", "value": 1},
-      {"source": "Mlle.Baptistine", "target": "Myriel", "value": 8},
-      ]
+  ],
+  "links": [
+    {"source": "test1", "target": "test2", "value": 1},
+    {"source": "test1", "target": "test3", "value": 8},
+    {"source": "test1", "target": "test4", "value": 10},
+    {"source": "test1", "target": "test5", "value": 6},
+    {"source": "test1", "target": "test6", "value": 2},
+    {"source": "test1", "target": "test7", "value": 3},
+    {"source": "test1", "target": "test8", "value": 4},
+    {"source": "test1", "target": "test9", "value": 5},
+    {"source": "test1", "target": "test10", "value": 7},
+    {"source": "test1", "target": "test11", "value": 9}
+
+  ]
 }
