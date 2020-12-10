@@ -15,15 +15,15 @@
   ],
   "links": [
     {"source": "test1", "target": "test2", "value": 1},
-    {"source": "test1", "target": "test3", "value": 8},
-    {"source": "test1", "target": "test4", "value": 10},
-    {"source": "test1", "target": "test5", "value": 6},
-    {"source": "test1", "target": "test6", "value": 2},
-    {"source": "test1", "target": "test7", "value": 3},
-    {"source": "test1", "target": "test8", "value": 4},
-    {"source": "test1", "target": "test9", "value": 5},
-    {"source": "test1", "target": "test10", "value": 7},
-    {"source": "test1", "target": "test11", "value": 9}
+    {"source": "test1", "target": "test3", "value": 1},
+    {"source": "test1", "target": "test4", "value": 1},
+    {"source": "test1", "target": "test5", "value": 1},
+    {"source": "test1", "target": "test6", "value": 1},
+    {"source": "test1", "target": "test7", "value": 2},
+    {"source": "test1", "target": "test8", "value": 2},
+    {"source": "test1", "target": "test9", "value": 2},
+    {"source": "test1", "target": "test10", "value": 2},
+    {"source": "test1", "target": "test11", "value": 2}
 
   ]
 }
