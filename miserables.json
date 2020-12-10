@@ -6,6 +6,7 @@
 
   "links": [
     {"source": "Gauci", "target": "Canvas"},
+    {"source": "Gauci", "target": "Zoom"},
     {"source": "Jabbar", "target": "Zoom"}
       ]
 }
