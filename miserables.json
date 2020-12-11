@@ -31,7 +31,6 @@
     {"source": "Canvas", "target": "Brainstorming platforms", "value": 1},
     {"source": "Wechat", "target": "Chat", "value": 1},
     {"source": "Mobile phone", "target": "Chat", "value": 1},
-    {"source": "Mobile phone", "target": "Chat", "value": 1},
     {"source": "Chat", "target": "Canvas", "value": 1}
   ]
 }
