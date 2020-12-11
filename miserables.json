@@ -45,6 +45,6 @@
     {"source": "Google earth", "target": "Google", "value": 1},
     {"source": "Google docs", "target": "Google", "value": 1},
     {"source": "Chrome share", "target": "Google", "value": 1},
-    {"source": "Google", "target": "Canvas", "value": 1},
+    {"source": "Google", "target": "Canvas", "value": 1}
   ]
 }
