@@ -30,7 +30,11 @@
     {"id": "MS word", "group": 6},
     {"id": "MS office", "group": 6},
     {"id": "Email", "group": 6},
-    {"id": "Microsoft", "group": 6}
+    {"id": "Microsoft", "group": 6},
+    {"id": "PollEv", "group": 7},
+    {"id": "Poll Everywhere", "group": 7},
+    {"id": "Polls", "group": 7}
+
   ],
 
   "links": [
@@ -63,6 +67,9 @@
     {"source": "MS word", "target": "Microsoft", "value": 1},
     {"source": "MS office", "target": "Microsoft", "value": 1},
     {"source": "Email", "target": "Microsoft", "value": 1},
-    {"source": "Canvas", "target": "Microsoft", "value": 1}
+    {"source": "Canvas", "target": "Microsoft", "value": 1},
+    {"source": "PollEv", "target": "Polls", "value": 1},
+    {"source": "Poll Everywhere", "target": "Polls", "value": 1},
+    {"source": "Canvas", "target": "Polls", "value": 1}
   ]
 }
