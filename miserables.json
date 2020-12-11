@@ -13,7 +13,7 @@
     {"id": "Milanote", "group": 3},
     {"id": "Lucidchart", "group": 3},
     {"id": "Moqups", "group": 3},
-    {"id": "Brainstorming platforms", "group": 3},
+    {"id": "Collaborate", "group": 3},
     {"id": "Wechat", "group": 4},
     {"id": "Mobile phone", "group": 4},
     {"id": "Chat", "group": 4},
@@ -45,6 +45,7 @@
     {"id": "Wordpress", "group": 9},
     {"id": "Purpose-built website", "group": 9},
     {"id": "Website", "group": 9},
+    {"id": "Share", "group": 9},
 
     {"id": "Zoom", "group": 10},
     {"id": "Wakelet", "group": 10},
@@ -68,7 +69,7 @@
 
     {"id": "Smart Sparrow", "group": 12},
     {"id": "H5P", "group": 12},
-    {"id": "LMS tools", "group": 12},
+    {"id": "LMS tools", "group": 12}
 
   ],
 
@@ -78,14 +79,18 @@
     {"source": "Adobe Rush", "target": "Adobe", "value": 1},
     {"source": "Adobe Creative Cloud", "target": "Adobe", "value": 1},
     {"source": "Adobe", "target": "Canvas", "value": 1},
-    {"source": "xmind", "target": "Brainstorming platforms", "value": 1},
-    {"source": "Padlet", "target": "Brainstorming platforms", "value": 1},
-    {"source": "Miro", "target": "Brainstorming platforms", "value": 1},
-    {"source": "Mindmup", "target": "Brainstorming platforms", "value": 1},
-    {"source": "Milanote", "target": "Brainstorming platforms", "value": 1},
-    {"source": "Lucidchart", "target": "Brainstorming platforms", "value": 1},
-    {"source": "Moqups", "target": "Brainstorming platforms", "value": 1},
-    {"source": "Canvas", "target": "Brainstorming platforms", "value": 1},
+    {"source": "xmind", "target": "Collaborate", "value": 1},
+    {"source": "Padlet", "target": "Collaborate", "value": 1},
+    {"source": "Miro", "target": "Collaborate", "value": 1},
+    {"source": "Mindmup", "target": "Collaborate", "value": 1},
+    {"source": "Milanote", "target": "Collaborate", "value": 1},
+    {"source": "Lucidchart", "target": "Collaborate", "value": 1},
+    {"source": "Moqups", "target": "Collaborate", "value": 1},
+    {"source": "Canvas", "target": "Collaborate", "value": 1},
+
+    {"source": "Google", "target": "Collaborate", "value": 1},
+    {"source": "Microsoft", "target": "Collaborate", "value": 1},
+
     {"source": "Wechat", "target": "Chat", "value": 1},
     {"source": "Mobile phone", "target": "Chat", "value": 1},
     {"source": "Chat", "target": "Canvas", "value": 1},
@@ -118,6 +123,10 @@
     {"source": "Wordpress", "target": "Website", "value": 1},
     {"source": "Purpose-built website", "target": "Website", "value": 1},
     {"source": "Canvas", "target": "Website", "value": 1},
+
+    {"source": "Share", "target": "Website", "value": 1},
+    {"source": "Share", "target": "Canvas", "value": 1},
+
     {"source": "Zoom", "target": "Canvas", "value": 1},
     {"source": "Zoom", "target": "Polls", "value": 1},
     {"source": "Zoom", "target": "Chat", "value": 1},
@@ -140,8 +149,11 @@
     {"source": "ArcGIS", "target": "Canvas", "value": 1},
     {"source": "LabArchives", "target": "Canvas", "value": 1},
 
+    {"source": "Canvas discussions", "target": "Chat", "value": 1},
+    {"source": "Canvas discussions", "target": "LMS tools", "value": 1},
     {"source": "H5P", "target": "LMS tools", "value": 1},
-    {"source": "Smart Sparrow", "target": "LMS tools", "value": 1}
+    {"source": "Smart Sparrow", "target": "LMS tools", "value": 1},
+    {"source": "Canvas", "target": "LMS tools", "value": 1}
 
   ]
 }
