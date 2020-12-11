@@ -50,22 +50,26 @@
     {"id": "Wakelet", "group": 10},
     {"id": "Twitter", "group": 10},
     {"id": "Software", "group": 10},
-    {"id": "Smart Sparrow", "group": 10},
     {"id": "Slack", "group": 10},
     {"id": "Perusall", "group": 10},
     {"id": "Online data base", "group": 10},
     {"id": "Mspace", "group": 10},
     {"id": "kahoot", "group": 10},
-    {"id": "H5P", "group": 10},
     {"id": "Gradescope", "group": 10},
     {"id": "Flipgrid", "group": 10},
     {"id": "Elan", "group": 10},
-    {"id": "Echo360", "group": 10},
-    {"id": "Caltura", "group": 10},
     {"id": "Best Network Slice", "group": 10},
     {"id": "ArticulateRise", "group": 10},
     {"id": "ArcGIS", "group": 10},
-    {"id": "LabArchives", "group": 10}
+    {"id": "LabArchives", "group": 10},
+    {"id": "Echo360", "group": 11},
+    {"id": "Caltura", "group": 11},
+    {"id": "AV pltforms", "group": 11},
+
+    {"id": "Smart Sparrow", "group": 12},
+    {"id": "H5P", "group": 12},
+    {"id": "LMS tools", "group": 12},
+
   ],
 
   "links": [
@@ -120,22 +124,24 @@
     {"source": "Wakelet", "target": "Canvas", "value": 1},
     {"source": "Twitter", "target": "Canvas", "value": 1},
     {"source": "Software", "target": "Canvas", "value": 1},
-    {"source": "Smart Sparrow", "target": "Canvas", "value": 1},
     {"source": "Slack", "target": "Canvas", "value": 1},
     {"source": "Slack", "target": "Chat", "value": 1},
     {"source": "Perusall", "target": "Canvas", "value": 1},
     {"source": "Online data base", "target": "Canvas", "value": 1},
     {"source": "Mspace", "target": "Canvas", "value": 1},
     {"source": "kahoot", "target": "Canvas", "value": 1},
-    {"source": "H5P", "target": "Canvas", "value": 1},
     {"source": "Gradescope", "target": "Canvas", "value": 1},
     {"source": "Flipgrid", "target": "Canvas", "value": 1},
     {"source": "Elan", "target": "Canvas", "value": 1},
-    {"source": "Echo360", "target": "Canvas", "value": 1},
-    {"source": "Caltura", "target": "Canvas", "value": 1},
+    {"source": "Echo360", "target": "AV pltforms", "value": 1},
+    {"source": "Caltura", "target": "AV pltforms", "value": 1},
     {"source": "Best Network Slice", "target": "Canvas", "value": 1},
     {"source": "ArticulateRise", "target": "Canvas", "value": 1},
     {"source": "ArcGIS", "target": "Canvas", "value": 1},
-    {"source": "LabArchives", "target": "Canvas", "value": 1}
+    {"source": "LabArchives", "target": "Canvas", "value": 1},
+
+    {"source": "H5P", "target": "LMS tools", "value": 1},
+    {"source": "Smart Sparrow", "target": "LMS tools", "value": 1}
+
   ]
 }
