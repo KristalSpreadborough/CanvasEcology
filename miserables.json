@@ -21,9 +21,17 @@
     {"id": "Google earth", "group": 5},
     {"id": "Google docs", "group": 5},
     {"id": "Chrome share", "group": 5},
-    {"id": "Google", "group": 5}
-
+    {"id": "Google", "group": 5},
+    {"id": "Teams", "group": 6},
+    {"id": "Sharepoint", "group": 6},
+    {"id": "Powerpoint", "group": 6},
+    {"id": "OneDrive", "group": 6},
+    {"id": "MS word", "group": 6},
+    {"id": "MS office", "group": 6},
+    {"id": "Email", "group": 6},
+    {"id": "Microsoft", "group": 6}
   ],
+
   "links": [
     {"source": "PDF forms", "target": "Adobe", "value": 1},
     {"source": "Adobe Spark", "target": "Adobe", "value": 1},
@@ -45,6 +53,14 @@
     {"source": "Google earth", "target": "Google", "value": 1},
     {"source": "Google docs", "target": "Google", "value": 1},
     {"source": "Chrome share", "target": "Google", "value": 1},
-    {"source": "Google", "target": "Canvas", "value": 1}
+    {"source": "Google", "target": "Canvas", "value": 1},
+    {"source": "Teams", "target": "Microsoft", "value": 1},
+    {"source": "Sharepoint", "target": "Microsoft", "value": 1},
+    {"source": "Powerpoint", "target": "Microsoft", "value": 1},
+    {"source": "OneDrive", "target": "Microsoft", "value": 1},
+    {"source": "MS word", "target": "Microsoft", "value": 1},
+    {"source": "MS office", "target": "Microsoft", "value": 1},
+    {"source": "Email", "target": "Microsoft", "value": 1},
+    {"source": "Canvas", "target": "Microsoft", "value": 1}
   ]
 }
