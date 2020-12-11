@@ -14,7 +14,9 @@
     {"id": "Lucidchart", "group": 3},
     {"id": "Brainstorming platforms", "group": 3},
     {"id": "Wechat", "group": 4},
-    {"id": "Mobile phone", "group": 4}
+    {"id": "Mobile phone", "group": 4},
+    {"id": "Chat", "group": 4}
+
   ],
   "links": [
     {"source": "PDF forms", "target": "Adobe", "value": 1},
