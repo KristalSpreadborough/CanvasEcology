@@ -46,7 +46,6 @@
     {"id": "Purpose-built website", "group": 9},
     {"id": "Website", "group": 9},
     {"id": "Share", "group": 9},
-
     {"id": "Zoom", "group": 10},
     {"id": "Wakelet", "group": 10},
     {"id": "Twitter", "group": 10},
@@ -66,11 +65,9 @@
     {"id": "Echo360", "group": 11},
     {"id": "Caltura", "group": 11},
     {"id": "AV pltforms", "group": 11},
-
     {"id": "Smart Sparrow", "group": 12},
     {"id": "H5P", "group": 12},
     {"id": "LMS tools", "group": 12}
-
   ],
 
   "links": [
@@ -87,10 +84,8 @@
     {"source": "Lucidchart", "target": "Collaborate", "value": 1},
     {"source": "Moqups", "target": "Collaborate", "value": 1},
     {"source": "Canvas", "target": "Collaborate", "value": 1},
-
     {"source": "Google", "target": "Collaborate", "value": 1},
     {"source": "Microsoft", "target": "Collaborate", "value": 1},
-
     {"source": "Wechat", "target": "Chat", "value": 1},
     {"source": "Mobile phone", "target": "Chat", "value": 1},
     {"source": "Chat", "target": "Canvas", "value": 1},
@@ -123,10 +118,8 @@
     {"source": "Wordpress", "target": "Website", "value": 1},
     {"source": "Purpose-built website", "target": "Website", "value": 1},
     {"source": "Canvas", "target": "Website", "value": 1},
-
     {"source": "Share", "target": "Website", "value": 1},
     {"source": "Share", "target": "Canvas", "value": 1},
-
     {"source": "Zoom", "target": "Canvas", "value": 1},
     {"source": "Zoom", "target": "Polls", "value": 1},
     {"source": "Zoom", "target": "Chat", "value": 1},
@@ -148,12 +141,10 @@
     {"source": "ArticulateRise", "target": "Canvas", "value": 1},
     {"source": "ArcGIS", "target": "Canvas", "value": 1},
     {"source": "LabArchives", "target": "Canvas", "value": 1},
-
     {"source": "Canvas discussions", "target": "Chat", "value": 1},
     {"source": "Canvas discussions", "target": "LMS tools", "value": 1},
     {"source": "H5P", "target": "LMS tools", "value": 1},
     {"source": "Smart Sparrow", "target": "LMS tools", "value": 1},
     {"source": "Canvas", "target": "LMS tools", "value": 1}
-
   ]
 }
