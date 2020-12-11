@@ -5,7 +5,16 @@
     {"id": "Adobe Spark", "group": 1},
     {"id": "PDF forms", "group": 1},
     {"id": "Adobe", "group": 1},
-    {"id": "Canvas", "group": 1}
+    {"id": "Canvas", "group": 2},
+    {"id": "xmind", "group": 3},
+    {"id": "Padlet", "group": 3},
+    {"id": "Miro", "group": 3},
+    {"id": "Mindmup", "group": 3},
+    {"id": "Milanote", "group": 3},
+    {"id": "Lucidchart", "group": 3},
+    {"id": "Moqups", "group": 3},
+    {"id": "Collaborate", "group": 3}
+
   ],
 
   "links": [
@@ -13,6 +22,15 @@
     {"source": "Adobe Spark", "target": "Adobe", "value": 1},
     {"source": "Adobe Rush", "target": "Adobe", "value": 1},
     {"source": "Adobe Creative Cloud", "target": "Adobe", "value": 1},
-    {"source": "Adobe", "target": "Canvas", "value": 1}
+    {"source": "Adobe", "target": "Canvas", "value": 1},
+    {"source": "xmind", "target": "Collaborate", "value": 1},
+    {"source": "Padlet", "target": "Collaborate", "value": 1},
+    {"source": "Miro", "target": "Collaborate", "value": 1},
+    {"source": "Mindmup", "target": "Collaborate", "value": 1},
+    {"source": "Milanote", "target": "Collaborate", "value": 1},
+    {"source": "Lucidchart", "target": "Collaborate", "value": 1},
+    {"source": "Moqups", "target": "Collaborate", "value": 1},
+    {"source": "Canvas", "target": "Collaborate", "value": 1}
+
   ]
 }
