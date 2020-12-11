@@ -60,8 +60,10 @@
     {"id": "Best Network Slice", "group": 10},
     {"id": "ArticulateRise", "group": 10},
     {"id": "ArcGIS", "group": 10},
-    {"id": "LabArchives", "group": 10}
-
+    {"id": "LabArchives", "group": 10},
+    {"id": "Echo360", "group": 11},
+    {"id": "Caltura", "group": 11},
+    {"id": "AV pltforms", "group": 11}
   ],
 
   "links": [
@@ -125,6 +127,9 @@
     {"source": "Best Network Slice", "target": "Canvas", "value": 1},
     {"source": "ArticulateRise", "target": "Canvas", "value": 1},
     {"source": "ArcGIS", "target": "Canvas", "value": 1},
-    {"source": "LabArchives", "target": "Canvas", "value": 1}
+    {"source": "LabArchives", "target": "Canvas", "value": 1},
+    {"source": "Echo360", "target": "AV pltforms", "value": 1},
+    {"source": "Caltura", "target": "AV pltforms", "value": 1},
+    {"source": "Canvas", "target": "AV pltforms", "value": 1}
   ]
 }
