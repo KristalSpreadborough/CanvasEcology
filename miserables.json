@@ -40,7 +40,12 @@
     {"id": "NVIVO", "group": 8},
     {"id": "Flat", "group": 8},
     {"id": "Facepager", "group": 8},
-    {"id": "Software", "group": 8}
+    {"id": "Software", "group": 8},
+    {"id": "Digital archives", "group": 9},
+    {"id": "Wordpress", "group": 9},
+    {"id": "Purpose-built website", "group": 9},
+    {"id": "Website", "group": 9},
+    {"id": "Share", "group": 9}
   ],
 
   "links": [
@@ -83,6 +88,11 @@
     {"source": "NVIVO", "target": "Software", "value": 1},
     {"source": "Flat", "target": "Software", "value": 1},
     {"source": "Facepager", "target": "Software", "value": 1},
-    {"source": "Canvas", "target": "Software", "value": 1}
+    {"source": "Canvas", "target": "Software", "value": 1},
+    {"source": "Digital archives", "target": "Website", "value": 1},
+    {"source": "Wordpress", "target": "Website", "value": 1},
+    {"source": "Purpose-built website", "target": "Website", "value": 1},
+    {"source": "Share", "target": "Website", "value": 1},
+    {"source": "Share", "target": "Canvas", "value": 1}
   ]
 }
