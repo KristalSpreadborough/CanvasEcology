@@ -13,9 +13,8 @@
     {"id": "Milanote", "group": 3},
     {"id": "Lucidchart", "group": 3},
     {"id": "Brainstorming platforms", "group": 3},
-    {"id": "Wechat", "group": 3},
-    {"id": "Mobile phone", "group": 3},
-
+    {"id": "Wechat", "group": 4},
+    {"id": "Mobile phone", "group": 4},
 
   ],
   "links": [
@@ -38,6 +37,3 @@
 
   ]
 }
-
-Wechat	Chat
-Mobile phone	Chat
