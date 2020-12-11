@@ -12,7 +12,9 @@
     {"id": "Mindmup", "group": 3},
     {"id": "Milanote", "group": 3},
     {"id": "Lucidchart", "group": 3},
-    {"id": "Brainstorming platforms", "group": 3}
+    {"id": "Brainstorming platforms", "group": 3},
+    {"id": "Wechat", "group": 3},
+    {"id": "Mobile phone", "group": 3},
 
 
   ],
@@ -27,7 +29,15 @@
     {"source": "Miro", "target": "Brainstorming platforms", "value": 1},
     {"source": "Mindmup", "target": "Brainstorming platforms", "value": 1},
     {"source": "Milanote", "target": "Brainstorming platforms", "value": 1},
-    {"source": "Lucidchart", "target": "Brainstorming platforms", "value": 1}
+    {"source": "Lucidchart", "target": "Brainstorming platforms", "value": 1},
+    {"source": "Canvas", "target": "Brainstorming platforms", "value": 1},
+    {"source": "Wechat", "target": "Chat", "value": 1},
+    {"source": "Mobile phone", "target": "Chat", "value": 1},
+    {"source": "Mobile phone", "target": "Chat", "value": 1},
+    {"source": "Canvas", "target": "Chat", "value": 1}
 
   ]
 }
+
+Wechat	Chat
+Mobile phone	Chat
