@@ -13,7 +13,10 @@
     {"id": "Milanote", "group": 3},
     {"id": "Lucidchart", "group": 3},
     {"id": "Moqups", "group": 3},
-    {"id": "Collaborate", "group": 3}
+    {"id": "Collaborate", "group": 3},
+    {"id": "Wechat", "group": 4},
+    {"id": "Mobile phone", "group": 4},
+    {"id": "Chat", "group": 4}
 
   ],
 
@@ -30,7 +33,9 @@
     {"source": "Milanote", "target": "Collaborate", "value": 1},
     {"source": "Lucidchart", "target": "Collaborate", "value": 1},
     {"source": "Moqups", "target": "Collaborate", "value": 1},
-    {"source": "Canvas", "target": "Collaborate", "value": 1}
-
+    {"source": "Canvas", "target": "Collaborate", "value": 1},
+    {"source": "Wechat", "target": "Chat", "value": 1},
+    {"source": "Mobile phone", "target": "Chat", "value": 1},
+    {"source": "Chat", "target": "Canvas", "value": 1}
   ]
 }
