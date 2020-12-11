@@ -16,8 +16,13 @@
     {"id": "Collaborate", "group": 3},
     {"id": "Wechat", "group": 4},
     {"id": "Mobile phone", "group": 4},
-    {"id": "Chat", "group": 4}
-
+    {"id": "Chat", "group": 4},
+    {"id": "Google sheets", "group": 5},
+    {"id": "Google quiz", "group": 5},
+    {"id": "Google earth", "group": 5},
+    {"id": "Google docs", "group": 5},
+    {"id": "Chrome share", "group": 5},
+    {"id": "Google", "group": 5}
   ],
 
   "links": [
@@ -36,6 +41,12 @@
     {"source": "Canvas", "target": "Collaborate", "value": 1},
     {"source": "Wechat", "target": "Chat", "value": 1},
     {"source": "Mobile phone", "target": "Chat", "value": 1},
-    {"source": "Chat", "target": "Canvas", "value": 1}
+    {"source": "Chat", "target": "Canvas", "value": 1},
+    {"source": "Google sheets", "target": "Google", "value": 1},
+    {"source": "Google quiz", "target": "Google", "value": 1},
+    {"source": "Google earth", "target": "Google", "value": 1},
+    {"source": "Google docs", "target": "Google", "value": 1},
+    {"source": "Chrome share", "target": "Google", "value": 1},
+    {"source": "Google", "target": "Canvas", "value": 1}
   ]
 }
