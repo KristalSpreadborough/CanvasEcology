@@ -29,7 +29,21 @@
     {"id": "MS word", "group": 6},
     {"id": "MS office", "group": 6},
     {"id": "Email", "group": 6},
-    {"id": "Microsoft", "group": 6}
+    {"id": "Microsoft", "group": 6},
+    {"id": "PollEv", "group": 7},
+    {"id": "Poll Everywhere", "group": 7},
+    {"id": "Polls", "group": 7},
+    {"id": "R", "group": 8},
+    {"id": "Qualtrics", "group": 8},
+    {"id": "Python", "group": 8},
+    {"id": "NVIVO", "group": 8},
+    {"id": "Flat", "group": 8},
+    {"id": "Facepager", "group": 8},
+    {"id": "Software", "group": 8},
+    {"id": "Digital archives", "group": 9},
+    {"id": "Wordpress", "group": 9},
+    {"id": "Purpose-built website", "group": 9},
+    {"id": "Website", "group": 9}
   ],
 
   "links": [
@@ -61,6 +75,20 @@
     {"source": "MS word", "target": "Microsoft", "value": 1},
     {"source": "MS office", "target": "Microsoft", "value": 1},
     {"source": "Email", "target": "Microsoft", "value": 1},
-    {"source": "Canvas", "target": "Microsoft", "value": 1}
+    {"source": "Canvas", "target": "Microsoft", "value": 1},
+    {"source": "PollEv", "target": "Polls", "value": 1},
+    {"source": "Poll Everywhere", "target": "Polls", "value": 1},
+    {"source": "Canvas", "target": "Polls", "value": 1},
+    {"source": "R", "target": "Software", "value": 1},
+    {"source": "Qualtrics", "target": "Software", "value": 1},
+    {"source": "Python", "target": "Software", "value": 1},
+    {"source": "NVIVO", "target": "Software", "value": 1},
+    {"source": "Flat", "target": "Software", "value": 1},
+    {"source": "Facepager", "target": "Software", "value": 1},
+    {"source": "Canvas", "target": "Software", "value": 1},
+    {"source": "Digital archives", "target": "Website", "value": 1},
+    {"source": "Wordpress", "target": "Website", "value": 1},
+    {"source": "Purpose-built website", "target": "Website", "value": 1}
+
   ]
 }
