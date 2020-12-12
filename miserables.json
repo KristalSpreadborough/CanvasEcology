@@ -70,8 +70,8 @@
     {"id": "Canvas discussions", "group": 12},
     {"id": "LMS tools", "group": 12},
     {"id": "Deliver content", "group": 12},
-    {"id": "Discuss", "group": 12}
-
+    {"id": "Discuss", "group": 12},
+    {"id": "Create", "group": 12}
   ],
 
   "links": [
@@ -114,7 +114,7 @@
     {"source": "NVIVO", "target": "Software", "value": 1},
     {"source": "Flat", "target": "Software", "value": 1},
     {"source": "Facepager", "target": "Software", "value": 1},
-    {"source": "Ecology", "target": "Software", "value": 1},
+    {"source": "Create", "target": "Software", "value": 1},
     {"source": "Digital archives", "target": "Website", "value": 1},
     {"source": "Wordpress", "target": "Website", "value": 1},
     {"source": "Purpose-built website", "target": "Website", "value": 1},
@@ -143,6 +143,11 @@
     {"source": "Smart Sparrow", "target": "LMS tools", "value": 1},
     {"source": "Deliver content", "target": "LMS tools", "value": 1},
     {"source": "Ecology", "target": "Deliver content", "value": 1},
-    {"source": "Ecology", "target": "Discuss", "value": 1}
+    {"source": "Ecology", "target": "Discuss", "value": 1},
+    {"source": "Create", "target": "Ecology", "value": 1},
+    {"source": "Create", "target": "Microsoft", "value": 1},
+    {"source": "Adobe", "target": "Create", "value": 1},
+    {"source": "Google", "target": "Create", "value": 1},
+    {"source": "Collaborate", "target": "Create", "value": 1}
   ]
 }
