@@ -152,6 +152,8 @@
     {"source": "Ecology", "target": "Microsoft", "value": 1},
     {"source": "Adobe", "target": "Ecology", "value": 1},
     {"source": "Google", "target": "Ecology", "value": 1},
-    {"source": "Collaborate", "target": "Ecology", "value": 1}
+    {"source": "Collaborate", "target": "Ecology", "value": 1},
+    {"source": "Canvas", "target": "Ecology", "value": 1},
+    {"source": "Mspace", "target": "Ecology", "value": 1}
   ]
 }
