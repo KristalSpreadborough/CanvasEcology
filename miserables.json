@@ -69,7 +69,8 @@
     {"id": "H5P", "group": 12},
     {"id": "Canvas discussions", "group": 12},
     {"id": "LMS tools", "group": 12},
-    {"id": "Deliver content", "group": 12}
+    {"id": "Deliver content", "group": 12},
+    {"id": "Discuss", "group": 12}
 
   ],
 
@@ -86,10 +87,10 @@
     {"source": "Milanote", "target": "Collaborate", "value": 1},
     {"source": "Lucidchart", "target": "Collaborate", "value": 1},
     {"source": "Moqups", "target": "Collaborate", "value": 1},
-    {"source": "Ecology", "target": "Collaborate", "value": 1},
+    {"source": "Discuss", "target": "Collaborate", "value": 1},
     {"source": "Wechat", "target": "Chat", "value": 1},
     {"source": "Mobile phone", "target": "Chat", "value": 1},
-    {"source": "Chat", "target": "Ecology", "value": 1},
+    {"source": "Chat", "target": "Discuss", "value": 1},
     {"source": "Google sheets", "target": "Google", "value": 1},
     {"source": "Google quiz", "target": "Google", "value": 1},
     {"source": "Google earth", "target": "Google", "value": 1},
@@ -106,7 +107,7 @@
     {"source": "Deliver content", "target": "Microsoft", "value": 1},
     {"source": "PollEv", "target": "Polls", "value": 1},
     {"source": "Poll Everywhere", "target": "Polls", "value": 1},
-    {"source": "Ecology", "target": "Polls", "value": 1},
+    {"source": "Discuss", "target": "Polls", "value": 1},
     {"source": "R", "target": "Software", "value": 1},
     {"source": "Qualtrics", "target": "Software", "value": 1},
     {"source": "Python", "target": "Software", "value": 1},
@@ -119,7 +120,7 @@
     {"source": "Purpose-built website", "target": "Website", "value": 1},
     {"source": "Deliver content", "target": "Website", "value": 1},
     {"source": "Deliver content", "target": "Ecology", "value": 1},
-    {"source": "Zoom", "target": "Ecology", "value": 1},
+    {"source": "Zoom", "target": "Discuss", "value": 1},
     {"source": "Wakelet", "target": "Ecology", "value": 1},
     {"source": "Twitter", "target": "Ecology", "value": 1},
     {"source": "Slack", "target": "Ecology", "value": 1},
@@ -142,6 +143,7 @@
     {"source": "H5P", "target": "LMS tools", "value": 1},
     {"source": "Smart Sparrow", "target": "LMS tools", "value": 1},
     {"source": "Deliver content", "target": "LMS tools", "value": 1},
-    {"source": "Ecology", "target": "Deliver content", "value": 1}
+    {"source": "Ecology", "target": "Deliver content", "value": 1},
+    {"source": "Ecology", "target": "Discuss", "value": 1}
   ]
 }
