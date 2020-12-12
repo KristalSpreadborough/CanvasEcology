@@ -63,7 +63,11 @@
     {"id": "LabArchives", "group": 10},
     {"id": "Echo360", "group": 11},
     {"id": "Caltura", "group": 11},
-    {"id": "AV pltforms", "group": 11}
+    {"id": "AV pltforms", "group": 11},
+    {"id": "Smart Sparrow", "group": 12},
+    {"id": "H5P", "group": 12},
+    {"id": "Canvas discussions", "group": 12},
+    {"id": "LMS tools", "group": 12}
   ],
 
   "links": [
@@ -130,6 +134,10 @@
     {"source": "LabArchives", "target": "Canvas", "value": 1},
     {"source": "Echo360", "target": "AV pltforms", "value": 1},
     {"source": "Caltura", "target": "AV pltforms", "value": 1},
-    {"source": "Canvas", "target": "AV pltforms", "value": 1}
+    {"source": "Canvas", "target": "AV pltforms", "value": 1},
+    {"source": "Canvas discussions", "target": "LMS tools", "value": 1},
+    {"source": "H5P", "target": "LMS tools", "value": 1},
+    {"source": "Smart Sparrow", "target": "LMS tools", "value": 1},
+    {"source": "Canvas", "target": "LMS tools", "value": 1}
   ]
 }
