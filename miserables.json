@@ -81,10 +81,10 @@
     {"id": "Canvas discussions", "group": 11},
     {"id": "LMS tools", "group": 1},
 
-    {"id": "Discuss", "group": 2},
-    {"id": "Create", "group": 2},
-    {"id": "Deliver content", "group": 2},
-    {"id": "Delayed", "group": 1}
+    {"id": "Discuss", "group": 6},
+    {"id": "Create", "group": 6},
+    {"id": "Deliver content", "group": 6},
+    {"id": "Delayed", "group": 6}
   ],
 
   "links": [
