@@ -123,7 +123,6 @@
     {"source": "Zoom", "target": "Discuss", "value": 1},
     {"source": "Wakelet", "target": "Ecology", "value": 1},
     {"source": "Twitter", "target": "Ecology", "value": 1},
-    {"source": "Slack", "target": "Ecology", "value": 1},
     {"source": "Slack", "target": "Chat", "value": 1},
     {"source": "Perusall", "target": "Ecology", "value": 1},
     {"source": "Online data base", "target": "Ecology", "value": 1},
