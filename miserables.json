@@ -68,7 +68,9 @@
     {"id": "Smart Sparrow", "group": 12},
     {"id": "H5P", "group": 12},
     {"id": "Canvas discussions", "group": 12},
-    {"id": "LMS tools", "group": 12}
+    {"id": "LMS tools", "group": 12},
+    {"id": "Deliver content", "group": 12}
+
   ],
 
   "links": [
@@ -76,7 +78,7 @@
     {"source": "Adobe Spark", "target": "Adobe", "value": 1},
     {"source": "Adobe Rush", "target": "Adobe", "value": 1},
     {"source": "Adobe Creative Cloud", "target": "Adobe", "value": 1},
-    {"source": "Adobe", "target": "Ecology", "value": 1},
+    {"source": "Adobe", "target": "Deliver content", "value": 1},
     {"source": "xmind", "target": "Collaborate", "value": 1},
     {"source": "Padlet", "target": "Collaborate", "value": 1},
     {"source": "Miro", "target": "Collaborate", "value": 1},
@@ -93,7 +95,7 @@
     {"source": "Google earth", "target": "Google", "value": 1},
     {"source": "Google docs", "target": "Google", "value": 1},
     {"source": "Chrome share", "target": "Google", "value": 1},
-    {"source": "Google", "target": "Ecology", "value": 1},
+    {"source": "Google", "target": "Deliver content", "value": 1},
     {"source": "Teams", "target": "Microsoft", "value": 1},
     {"source": "Sharepoint", "target": "Microsoft", "value": 1},
     {"source": "Powerpoint", "target": "Microsoft", "value": 1},
@@ -101,7 +103,7 @@
     {"source": "MS word", "target": "Microsoft", "value": 1},
     {"source": "MS office", "target": "Microsoft", "value": 1},
     {"source": "Email", "target": "Microsoft", "value": 1},
-    {"source": "Ecology", "target": "Microsoft", "value": 1},
+    {"source": "Deliver content", "target": "Microsoft", "value": 1},
     {"source": "PollEv", "target": "Polls", "value": 1},
     {"source": "Poll Everywhere", "target": "Polls", "value": 1},
     {"source": "Ecology", "target": "Polls", "value": 1},
@@ -115,8 +117,8 @@
     {"source": "Digital archives", "target": "Website", "value": 1},
     {"source": "Wordpress", "target": "Website", "value": 1},
     {"source": "Purpose-built website", "target": "Website", "value": 1},
-    {"source": "Share", "target": "Website", "value": 1},
-    {"source": "Share", "target": "Ecology", "value": 1},
+    {"source": "Deliver content", "target": "Website", "value": 1},
+    {"source": "Deliver content", "target": "Ecology", "value": 1},
     {"source": "Zoom", "target": "Ecology", "value": 1},
     {"source": "Wakelet", "target": "Ecology", "value": 1},
     {"source": "Twitter", "target": "Ecology", "value": 1},
@@ -135,10 +137,11 @@
     {"source": "LabArchives", "target": "Ecology", "value": 1},
     {"source": "Echo360", "target": "AV pltforms", "value": 1},
     {"source": "Caltura", "target": "AV pltforms", "value": 1},
-    {"source": "Share", "target": "AV pltforms", "value": 1},
+    {"source": "Deliver content", "target": "AV pltforms", "value": 1},
     {"source": "Canvas discussions", "target": "LMS tools", "value": 1},
     {"source": "H5P", "target": "LMS tools", "value": 1},
     {"source": "Smart Sparrow", "target": "LMS tools", "value": 1},
-    {"source": "Ecology", "target": "LMS tools", "value": 1}
+    {"source": "Deliver content", "target": "LMS tools", "value": 1},
+    {"source": "Ecology", "target": "Deliver content", "value": 1}
   ]
 }
