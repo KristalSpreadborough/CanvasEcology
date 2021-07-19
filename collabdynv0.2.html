@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<svg width="960" height="600"></svg>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+// data
+var baseNodes = [
+
+  { id: "#DataCreatives", group: 0, label: "#DataCreatives", level: 1 },
+
+  //data
+  { id: "Data", group: 0, label: "Data", level: 1 },
+  { id: "Pattern", group: 0, label: "Pattern Makers", level: 2, url: 'https://www.thepatternmakers.com.au/blog/2019/4/5/audience-outlook-monitor-dashboard' },
+  { id: "Canvas", group: 0, label: "Canvas", level: 2 },
+  { id: "Survey", group: 0, label: "Survey Questions", level: 2 },
+  { id: "Social", group: 1, label: "Social Media"   , level: 2 },
+  { id: "#CreateAustraliasFuture", group: 1, label: "#CreateAustraliasFuture", level: 3 },
+  { id: "#SPREADARTNOTVIRUSES", group: 1, label: "#SPREADARTNOTVIRUSES", level: 3 },
+  { id: "#ViewFromMyWindow", group: 1, label: "#ViewFromMyWindow", level: 3 },
+  { id: "#InThisTogether", group: 1, label: "#InThisTogether", level: 3 },
+  { id: "#lockdowngetdown", group: 1, label: "#lockdowngetdown", level: 3 },
+  { id: "#KeepYourTicket", group: 1, label: "#KeepYourTicket", level: 3, url: 'https://twitter.com/search?q=%23KeepYourTicket&src=typed_query' },
+  { id: "#STAYINALIVE", group: 1, label: "#STAYINALIVE", level: 3 },
+
+  //people
+  { id: "People", group: 2, label: "People", level: 1 },
+  { id: "MGSE", group: 2, label: "MGSE", level: 2, url: 'https://education.unimelb.edu.au' },
+  { id: "MDAP", group: 2, label: "MDAP", level: 2, url: 'https://mdap.unimelb.edu.au' },
+  { id: "SCIP", group: 2, label: "SCIP", level: 2, url: 'https://scip.unimelb.edu.au' },
+  { id: "Con", group: 2, label: "Conservatorium", level: 2, url: 'https://finearts-music.unimelb.edu.au/about-us/mcm' },
+  { id: "CSHE", group: 2, label: "CSHE", level: 2, url: 'https://melbourne-cshe.unimelb.edu.au/about' },
+  { id: "Schol", group: 2, label: "Scholarly Services", level: 2, url: 'https://library.unimelb.edu.au/#about' },
+
+    //tools
+    { id: "Tools", group: 3, label: "Tools", level: 1 },
+    { id: "GitLab", group: 4, label: "GitLab", level: 3 },
+    { id: "Repository", group: 4, label: "Repository", level: 3 },
+    { id: "Pages", group: 4, label: "Pages", level: 3 },
+    { id: "Docs", group: 4, label: "Docs", level: 3 },
+
+    { id: "Microsoft", group: 5, label: "Microsoft", level: 3 },
+    { id: "Word", group: 5, label: "Word", level: 3 },
+    { id: "PowerPoint", group: 5, label: "PowerPoint", level: 3 },
+    { id: "Excel", group: 5, label: "Excel", level: 3 },
+
+    { id: "Code and stuff", group: 6, label: "Packages", level: 3 },
+    { id: "R Shiny", group: 6, label: "R Shiny", level: 3 },
+    { id: "Canvas API Postman", group: 6, label: "Canvas API Postman", level: 3 },
+    { id: "rFigshare", group: 6, label: "rFigshare", level: 3 },
+    { id: "Instaloader", group: 6, label: "Instaloader", level: 3 },
+    { id: "Tinker", group: 6, label: "Tinker", level: 3 },
+    { id: "Python", group: 6, label: "Python", level: 3 },
+    { id: "Voyant", group: 6, label: "Voyant", level: 3 },
+
+    { id: "Communications", group: 7, label: "Communications", level: 3 },
+    { id: "Share point", group: 7, label: "Share point", level: 3 },
+    { id: "Zoom", group: 7, label: "Zoom", level: 3 },
+    { id: "Teams", group: 7, label: "Teams", level: 3 },
+    { id: "Mozilla Hubs", group: 7, label: "Mozilla Hubs", level: 3 },
+
+    //publishing platforms
+    { id: "Publishing Platforms", group: 8, label: "Publishing Platforms", level: 3 },
+    { id: "Omeka", group: 8, label: "Omeka", level: 3 },
+    { id: "Conv", group: 8, label: "The Conversation", level: 3 },
+    { id: "Papers", group: 8, label: "Whitepapers", level: 3 },
+    { id: "Tweets", group: 8, label: "Tweets", level: 3 },
+    { id: "Pursuit", group: 8, label: "Pursuit", level: 3 },
+    { id: "SOTEL", group: 8, label: "SOTEL Blog", level: 3 },
+    { id: "Figshare", group: 8, label: "Figshare", level: 3 }
+
+]
+
+var baseLinks = [
+  { target: "Data", source: "#DataCreatives" , strength: 0.7 },
+  { target: "People", source: "#DataCreatives" , strength: 0.7 },
+  { target: "Tools", source: "#DataCreatives" , strength: 0.7 },
+
+//data links
+  { target: "Data", source: "Pattern" , strength: 0.7 },
+  { target: "Data", source: "Canvas" , strength: 0.7 },
+  { target: "Data", source: "Survey" , strength: 0.7 },
+  { target: "Data"  , source: "Social", strength: 0.7 },
+  { target: "Social"  , source: "#CreateAustraliasFuture", strength: 0.4 },
+  { target: "Social"   , source: "#SPREADARTNOTVIRUSES" , strength: 0.4 },
+  { target: "Social"  , source: "#ViewFromMyWindow" , strength: 0.4 },
+  { target: "Social"   , source: "#InThisTogether" , strength: 0.4 },
+  { target: "Social"   , source: "#lockdowngetdown" , strength: 0.4 },
+  { target: "Social"   , source: "#KeepYourTicket" , strength: 0.4 },
+	{ target: "Social"  , source: "#STAYINALIVE" , strength: 0.4 },
+//people
+  { target: "People", source: "MGSE" , strength: 0.7 },
+  { target: "People", source: "MDAP" , strength: 0.7 },
+  { target: "People", source: "SCIP" , strength: 0.7 },
+  { target: "People", source: "Con", strength: 0.7 },
+  { target: "People", source: "CSHE", strength: 0.7 },
+  { target: "People", source: "Schol", strength: 0.7 },
+
+  //tools links
+    { target: "Tools", source: "GitLab" , strength: 0.7 },
+    { target: "GitLab", source: "Repository" , strength: 0.4 },
+    { target: "GitLab", source: "Pages" , strength: 0.4 },
+    { target: "GitLab"  , source: "Docs", strength: 0.4 },
+
+    { target: "Tools", source: "Microsoft" , strength: 0.7 },
+    { target: "Microsoft", source: "Word" , strength: 0.4 },
+    { target: "Microsoft", source: "PowerPoint" , strength: 0.4 },
+    { target: "Microsoft"  , source: "Excel", strength: 0.4 },
+
+    { target: "Tools", source: "Code and stuff" , strength: 0.7 },
+    { target: "Code and stuff", source: "R Shiny" , strength: 0.4 },
+    { target: "Code and stuff", source: "Canvas API Postman" , strength: 0.4 },
+    { target: "Code and stuff"  , source: "rFigshare", strength: 0.4 },
+    { target: "Code and stuff", source: "Instaloader" , strength: 0.4 },
+    { target: "Code and stuff", source: "Tinker" , strength: 0.4 },
+    { target: "Code and stuff"  , source: "Python", strength: 0.4 },
+    { target: "Code and stuff"  , source: "Voyant", strength: 0.4 },
+  //comms links
+    { target: "Tools", source: "Communications" , strength: 0.7 },
+    { target: "Communications", source: "Share point" , strength: 0.4 },
+    { target: "Communications", source: "Zoom" , strength: 0.4 },
+    { target: "Communications"  , source: "Teams", strength: 0.4 },
+    { target: "Communications", source: "Mozilla Hubs" , strength: 0.4 },
+
+  //publishing platforms
+  { target: "Tools", source: "Publishing Platforms" , strength: 0.7 },
+  { target: "Publishing Platforms", source: "Omeka" , strength: 0.4 },
+  { target: "Publishing Platforms", source: "Conv" , strength: 0.4 },
+  { target: "Publishing Platforms"  , source: "Papers", strength: 0.4 },
+  { target: "Publishing Platforms", source: "Tweets" , strength: 0.4 },
+  { target: "Publishing Platforms", source: "Pursuit" , strength: 0.4 },
+  { target: "Publishing Platforms"  , source: "SOTEL", strength: 0.4 },
+  { target: "Publishing Platforms", source: "Figshare" , strength: 0.4 },
+
+
+]
+
+var nodes = [...baseNodes]
+var links = [...baseLinks]
+
+function getNeighbors(node) {
+  return baseLinks.reduce(function (neighbors, link) {
+      if (link.target.id === node.id) {
+        neighbors.push(link.source.id)
+      } else if (link.source.id === node.id) {
+        neighbors.push(link.target.id)
+      }
+      return neighbors
+    },
+    [node.id]
+  )
+}
+
+function isNeighborLink(node, link) {
+  return link.target.id === node.id || link.source.id === node.id
+}
+
+
+function getNodeColor(node, neighbors) {
+  if (Array.isArray(neighbors) && neighbors.indexOf(node.id) > -1) {
+    return node.level === 1 ? 'blue' : 'green'
+  }
+
+  return node.level === 1 ? 'red' : 'grey'
+}
+
+
+function getLinkColor(node, link) {
+  return isNeighborLink(node, link) ? 'green' : '#E5E5E5'
+}
+
+function getTextColor(node, neighbors) {
+  return Array.isArray(neighbors) && neighbors.indexOf(node.id) > -1 ? 'green' : 'black'
+}
+
+var width = window.innerWidth
+var height = window.innerHeight
+
+var svg = d3.select('svg')
+svg.attr('width', width).attr('height', height)
+
+//set background colour
+mycolor = d3.rgb(220,220,220);  // Red, Green, Blue
+d3.select("body").style("background-color", mycolor)  // set background color
+
+var linkElements,
+  nodeElements,
+  textElements
+
+// we use svg groups to logically group the elements together
+var linkGroup = svg.append('g').attr('class', 'links')
+var nodeGroup = svg.append('g').attr('class', 'nodes')
+var textGroup = svg.append('g').attr('class', 'texts')
+
+// we use this reference to select/deselect
+// after clicking the same element twice
+var selectedId
+
+// simulation setup with all forces
+var linkForce = d3
+  .forceLink()
+  .id(function (link) { return link.id })
+  .strength(function (link) { return link.strength })
+
+var simulation = d3
+  .forceSimulation()
+  .force('link', linkForce)
+  .force('charge', d3.forceManyBody().strength(-120))
+  .force('center', d3.forceCenter(width / 2, height / 2))
+
+var dragDrop = d3.drag().on('start', function (node) {
+  node.fx = node.x
+  node.fy = node.y
+}).on('drag', function (node) {
+  simulation.alphaTarget(0.7).restart()
+  node.fx = d3.event.x
+  node.fy = d3.event.y
+}).on('end', function (node) {
+  if (!d3.event.active) {
+    simulation.alphaTarget(0)
+  }
+  node.fx = null
+  node.fy = null
+})
+
+// select node is called on every click
+// we either update the data according to the selection
+// or reset the data if the same node is clicked twice
+function selectNode(selectedNode) {
+  if (selectedId === selectedNode.id) {
+    selectedId = undefined
+    resetData()
+    updateSimulation()
+  } else {
+    selectedId = selectedNode.id
+    updateData(selectedNode)
+    updateSimulation()
+  }
+
+  var neighbors = getNeighbors(selectedNode)
+
+  // we modify the styles to highlight selected nodes
+  nodeElements.attr('fill', function (node) { return getNodeColor(node, neighbors) })
+  textElements.attr('fill', function (node) { return getTextColor(node, neighbors) })
+  linkElements.attr('stroke', function (link) { return getLinkColor(selectedNode, link) })
+}
+
+// this helper simple adds all nodes and links
+// that are missing, to recreate the initial state
+function resetData() {
+  var nodeIds = nodes.map(function (node) { return node.id })
+
+  baseNodes.forEach(function (node) {
+    if (nodeIds.indexOf(node.id) === -1) {
+      nodes.push(node)
+    }
+  })
+
+  links = baseLinks
+}
+
+// diffing and mutating the data
+function updateData(selectedNode) {
+  var neighbors = getNeighbors(selectedNode)
+  var newNodes = baseNodes.filter(function (node) {
+    return neighbors.indexOf(node.id) > -1 || node.level === 1
+  })
+
+  var diff = {
+    removed: nodes.filter(function (node) { return newNodes.indexOf(node) === -1 }),
+    added: newNodes.filter(function (node) { return nodes.indexOf(node) === -1 })
+  }
+
+  diff.removed.forEach(function (node) { nodes.splice(nodes.indexOf(node), 1) })
+  diff.added.forEach(function (node) { nodes.push(node) })
+
+  links = baseLinks.filter(function (link) {
+    return link.target.id === selectedNode.id || link.source.id === selectedNode.id
+  })
+}
+
+function updateGraph() {
+  // links
+  linkElements = linkGroup.selectAll('line')
+    .data(links, function (link) {
+      return link.target.id + link.source.id
+    })
+
+  linkElements.exit().remove()
+
+  var linkEnter = linkElements
+    .enter().append('line')
+    .attr('stroke-width', 1)
+    .attr('stroke', 'rgba(244, 95, 26, 0.2)')
+
+  linkElements = linkEnter.merge(linkElements)
+
+  // nodes
+  nodeElements = nodeGroup.selectAll('circle')
+    .data(nodes, function (node) { return node.id })
+
+  nodeElements.exit().remove()
+
+  var nodeEnter = nodeElements
+    .enter()
+    .append('circle')
+    .attr( 'r' , 10 )
+    .attr('fill', function (node) { return node.level === 1 ? 'red' : 'gray' })
+
+    .call(dragDrop)
+    // we link the selectNode method here
+    // to update the graph on every click
+    .on('click', selectNode)
+
+  nodeElements = nodeEnter.merge(nodeElements)
+
+  // texts
+  textElements = textGroup.selectAll('text')
+    .data(nodes, function (node) { return node.id })
+
+  textElements.exit().remove()
+
+  var textEnter = textElements
+    .enter()
+    .append('text')
+    .text(function (node) { return node.label })
+    .attr('font-size', 15)
+    .attr('dx', 15)
+    .attr('dy',4)
+    .style('fill', 'black')
+
+  textElements = textEnter.merge(textElements)
+}
+
+function updateSimulation() {
+  updateGraph()
+
+  simulation.nodes(nodes).on('tick', () => {
+    nodeElements
+      .attr('cx', function (node) { return node.x })
+      .attr('cy', function (node) { return node.y })
+    textElements
+      .attr('x', function (node) { return node.x })
+      .attr('y', function (node) { return node.y })
+    linkElements
+      .attr('x1', function (link) { return link.source.x })
+      .attr('y1', function (link) { return link.source.y })
+      .attr('x2', function (link) { return link.target.x })
+      .attr('y2', function (link) { return link.target.y })
+  })
+
+  simulation.force('link').links(links)
+  simulation.alphaTarget(0.7).restart()
+}
+
+// last but not least, we call updateSimulation
+// to trigger the initial render
+updateSimulation()
+
+</script>
